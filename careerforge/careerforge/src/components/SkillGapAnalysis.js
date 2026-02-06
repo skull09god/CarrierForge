@@ -110,9 +110,13 @@ export default function SkillGapAnalysis({
               {rec.resources && (
                 <div className="rec-resources">
                   {rec.resources.map((resource, i) => (
-                    <a key={i} href="#" className="rec-link">
+                    <button 
+                      key={i} 
+                      className="rec-link"
+                      onClick={() => console.log('Resource:', resource)}
+                    >
                       {resource}
-                    </a>
+                    </button>
                   ))}
                 </div>
               )}
