@@ -42,7 +42,7 @@ function ChatInterface() {
   ]);
   const [input, setInput] = useState('');
   const [isLoading, setIsLoading] = useState(false);
-  const [userContext, setUserContext] = useState({
+  const [userContext] = useState({
     careerStage: null,
     goals: [],
     skills: [],
